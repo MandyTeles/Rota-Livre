@@ -1,0 +1,1230 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --qpreto: #232020;
+    --branco: #F9F7F3;
+    --laranja: #EE964B;
+    --vermelho: #B41825;
+    --verde: #5B8C5A;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+body{
+    background-color: #F9F7F3;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: #232020;
+    font-family: 'Playfair', serif;
+    padding: 10px;
+    align-items: center;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    
+}
+.logoP{
+    margin-left: 20%;
+    margin-right: 2%;
+}
+.nome{
+    color: #EE964B;
+    font-family: 'Parkinsans',sans-serif;
+    margin: 20px;
+    font-style: 600;
+
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    position:absolute;
+    right: 20%;
+}
+a{
+    text-decoration: none;
+}
+
+li{
+    margin: 30px;
+    cursor: pointer;
+    color: #F9F7F3;
+    font-size: 20px;
+}
+li:hover {
+    color: #EE964B; 
+  }
+
+.listaInicio{
+   color: #F9F7F3;
+   font-size: 24px;
+   text-decoration: underline;
+   text-decoration-color: orange;
+   cursor: pointer; 
+
+}
+
+/* Estilo padrão */
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    /* position: absolute;
+    right: 20%; */
+}
+    
+.menu-toggle {
+    display: none; /* Escondido por padrão */
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #F9F7F3;
+}
+
+/* Para telas menores */
+@media (max-width: 770px) {
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .menu {
+        flex-direction: column;
+        position: static;
+        display: none; /* Escondido por padrão */
+        background-color: #232020;
+        margin-top: 10px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .menu a {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        /* position: absolute;
+        top: 20px;
+        right: 20px; */
+    }
+
+    .menu.open {
+        display: flex;
+    }
+}
+
+
+
+/* Inicio */
+.inicio{
+    height: 100vh;
+    background: url(/img/mapaG.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: cover;
+    justify-content: space-between;
+}
+
+.textoInicioP{
+    height: 100%;
+    width: 720px;
+    display: flex;
+    align-items: center;
+}
+.textoInicioF{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 400;  
+    font-size: 1.2rem; 
+    background-color: #F9F7F3B3;
+    width: 720px;
+    height: 401px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 61px;
+    
+}
+.RotaTextoNegrito{
+    font-style: bold;
+}
+.LivreVerde{
+    color: #5B8C5A;
+}
+/* Semaforo */
+
+.semaforop{
+    position: absolute;
+    top: 100vh;
+    right: 30px;
+}
+
+  .semaforo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 304px;
+    height: 848px;
+    background: var(--qpreto);
+    border-radius: 148px;
+    padding: 10px;
+  }
+
+.luz{
+    width: 208px;
+    height: 203px;
+    border-radius: 50%;
+    background: gray;
+}
+
+.vermelha { 
+    background: var(--vermelho);
+}
+.laranja { 
+    background: var(--laranja); 
+}
+.verde { 
+    background: var(--verde); 
+}
+ 
+  
+
+/* projeto */
+
+.projeto{
+    height: 100vh;
+    background-color: #F9F7F3;
+}
+.imgPreto{
+    padding-top: 30px;
+}
+
+.Ppreto{
+    color: var(--branco);
+    width: 600px;
+    font-size: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+.containerPreto{
+    background-color: #232020;
+    width: 995px;
+    height: 100vh;
+    border-top-right-radius: 106px;
+    border-bottom-right-radius: 106px;
+    font-family: 'League Spartan';
+    font-style: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.containerRedP{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.containerRed{
+    background-color: #B41825;
+    width: 885px;
+    height: 100vh;
+    border-top-left-radius: 106px;
+    border-bottom-left-radius: 106px;
+    font-family: 'League Spartan', Arial, sans-serif;
+    font-style: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.containerRed p{
+    width: 562px;
+    line-height: normal;
+    padding-left: 60px;
+    color: var(--branco);
+    font-size: 28px;
+    text-align: justify;
+}
+.imagensVermelho{
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sobre2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerOrange{
+    height: calc(100vh - 70px);
+    width: 90%;
+    background-color: var(--laranja);
+    border-radius: 106px;
+}
+/* carrossel */
+.carousel-container {
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: var(--laranja); 
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 40%; 
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-right: 5%;
+    height: 577px;
+    background-color: white;
+    border-radius: 95px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 31px;
+}
+
+.carousel-item p {
+    margin-top: 15px;
+    color: var(--qpreto);
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-family: 'League Spartan', Arial, sans-serif;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 122px;
+}
+
+.dots span {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.dots .active {
+    background-color: #333; /* Cor do ponto ativo */
+}
+
+/* Verde */
+.services{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.containerGreen{
+    height: 100%;
+    width: 885px;
+    background-color: var(--verde);
+    border-radius: 106px 0px 0px 106px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+
+.containerGreenText{
+    width: 80%;
+    font-family: 'League Spartan', Arial, sans-serif;
+    font-style: 100;
+    font-size: 1.5rem;
+    padding-left: 60px;
+   text-align: justify;
+}
+
+.greenH2{
+    color: var(--branco);
+}
+
+.imagensVerde{
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer */
+footer{
+    background-color: #232020;
+    color: #F9F7F3;
+    font-family: 'Playfair',serif;
+    font-size: 18px;
+    height: 400px;
+    margin-top: 120px;
+    border-radius: 40px 40px 0px 0px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rotaL{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;    
+}
+
+.rotaL h2{
+    font-family: 'League Spartan';
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 34px;
+}
+
+.rotaL p{
+    width: 350px;
+    font-size: 28px;
+    text-align: justify;
+    font-family: 'League Spartan';
+    font-style: 100;
+
+}
+
+.rotalogoP{
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    font-family: 'Playfair';
+    font-weight: 100;
+}
+.appDev img{
+    background-color: #fff;
+    border-radius: 50%;
+}
+.appDev{
+    display: flex;
+    padding-bottom: 30px;
+    width: 80%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.baixe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    margin-top: 10px;
+}
+
+.baixe h3{
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.baixe a{
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: var(--branco);
+    background-color: var(--laranja);
+    align-items: center;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.contato{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.contato img{
+    width: 30px;
+    height: 30px;
+}
+
+.contato h3{
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.contatoInfo{
+    display: flex;
+    text-decoration: none;
+    text-align: justify;
+    font-family: 'Playfair',serif;
+    font-weight: 100;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.contatoInfo a{
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.contatoInfo a:hover{
+    text-decoration: underline;
+    text-decoration-color: var(--vermelho);
+    text-decoration-thickness: 2.5px; 
+    text-underline-offset: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card {
+      flex: 0 0 80%; /* Card ocupa 80% do carrossel em telas médias */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .card {
+      flex: 0 0 100%; /* Card ocupa 100% do carrossel em telas pequenas */
+    }
+  }
+
+@media only screen and (max-width: 1125px) {
+    
+    .navbar{
+        padding: 8px;     
+    }
+
+    .logoP{
+        margin-left: 15px;
+        margin-right: 10px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .nome{
+        margin: 18px;
+        font-style: 600;
+        font-size: 25px;
+    }
+    
+    ul{
+        right: 8%;
+    }
+
+    /* a{
+
+    } */
+    
+    li{
+        margin: 30px;
+        font-size: 14px;
+    }
+    
+    /* li:hover {
+
+      } */
+    
+    .listaInicio{
+ 
+       font-size: 16px;
+    
+    }
+    
+    /* Inicio */
+    .inicio{
+        height: 96vh;
+        width: 100%;
+    }
+    
+    .textoInicioP{
+        height: 100%;
+        width: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .textoInicioF{
+        font-weight: 300;  
+        font-size: 1rem; 
+        width: 60%;
+        justify-content: center;
+        height: 250px;
+        padding: 40px;
+        border-radius: 61px 61px 61px 61px;
+        
+    }
+
+    /* .RotaTextoNegrito{
+    } */
+
+    /* .LivreVerde{
+    } */
+     
+    /* Semaforo */
+    
+    .semaforop{
+        top: 65vh;
+        right: 30px;
+    }
+    
+    .semaforo {
+        gap: 6px; /* Mantém o espaçamento proporcional */
+        width: 152px; /* Reduzido para 50% */
+        height: 424px;
+        border-radius: 74px; /* Reduzido proporcionalmente */
+    }
+
+    .luz {
+        width: 104px; /* Reduzido para 50% */
+        height: 102px; 
+        border-radius: 50%; /* Mantém o formato circular */
+    }
+    /* .vermelha { 
+        background: var(--vermelho);
+    }
+    .laranja { 
+        background: var(--laranja); 
+    }
+    .verde { 
+        background: var(--verde); 
+    } */
+     
+      
+    
+    /* projeto */
+    
+    .projeto{
+        height: 96vh;
+    }
+    .imgPreto{
+        padding-top: 26px;
+        width: 230px;
+    }
+    
+    .Ppreto{
+        width: 400px;
+        font-size: 26px;
+        margin: 26px;
+    }
+    .containerPreto{
+        width: 75%;
+        height: 96vh;
+    }
+    .containerRedP{
+        width: 100%;
+    }
+    .containerRed{
+        width: 60%;
+        height: 96vh;
+        border-top-left-radius: 106px;
+        border-bottom-left-radius: 106px;
+        font-style: 100;
+    }
+    
+/* * img{
+    display: none;
+}
+ */
+    .containerRed p{
+        width: 90%;
+        /* padding: 30px; */
+        font-size: 26px;
+        padding-left: 40px;
+    }
+    .imagensVermelho{
+        width: 230px;
+        padding: 30px;
+    }
+    .imagensVermelho img{
+        width: 270px;
+        
+    }
+    
+    
+    .sobre2{
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .containerOrange{
+        width: 90%;
+        border-radius: 106px;
+        height: 70%;
+    }
+    /* carrossel */
+    .carousel-container {
+        width: 80%;
+        margin: 50px auto;
+        border-radius: 10px;
+    }
+    
+    .carousel {
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .carousel-item {
+        flex: 0 0 40%; 
+        padding: 20px;
+        margin-right: 5%;
+        height: 100%;
+        border-radius: 95px;
+    }
+    
+    .carousel-item img {
+        border-radius: 31px;
+        width: 180px;
+    }
+    
+    .carousel-item p {
+        margin-top: 15px;
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+    
+    button {
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 5px;
+    }
+    
+    button.prev {
+        left: 10px;
+    }
+    
+    button.next {
+        right: 10px;
+    }
+    
+    /* button:hover {
+
+    } */
+    
+    .dots {
+        margin-top: 122px;
+    }
+    
+    .dots span {
+        width: 10px;
+        height: 10px;
+        margin: 0 5px;
+        border-radius: 50%;
+    }
+    
+    /* .dots .active {
+
+    } */
+    
+    /* Verde */
+    .services{
+        width: 100%;
+        height: 100vh;
+    }
+    .containerGreen{
+        height: 100%;
+        width: 80%;
+        border-radius: 106px 0px 0px 106px;
+    }
+    
+    .containerGreenText{
+        width: 80%;
+        font-style: 100;
+        font-size: 1.5rem;
+        padding-left: 30px;
+    }
+    
+    .greenH2{
+        color: var(--branco);
+    }
+    
+    .imagensVerde img{
+        width: 260px;
+        /* padding: 30px; */
+    }
+    
+    /* Footer */
+    footer{
+        font-size: 18px;
+        height: 400px;
+        margin-top: 120px;
+        border-radius: 40px 40px 0px 0px;
+        /* padding: 30px; */
+    }
+    
+    .rotaL{
+        width: 50%;
+    }
+    
+    .rotaL h2{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 34px;
+    }
+    
+    .rotaL p{
+        width: 350px;
+        font-size: 28px;
+        font-style: 100;
+    
+    }
+    
+    .rotalogoP{
+        width: 100px;
+        height: 100px;
+        margin-top: 30px;
+    }
+    
+    .app{
+        width: 40%;
+        font-weight: 100;
+    }
+    .appDev img{
+        border-radius: 50%;
+    }
+    .appDev{
+        padding-bottom: 30px;
+        width: 80%;
+        padding: 20px;
+        gap: 10px;
+    }
+    
+    .baixe{
+        padding-bottom: 50px;
+        margin-top: 10px;
+    }
+    
+    .baixe h3{
+        margin-bottom: 20px;
+        font-size: 26px;
+    }
+    
+    .baixe a{
+        padding: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        border-radius: 40px;
+    }
+    
+    .contato{
+        margin-left: 10px;
+    }
+    
+    .contato img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .contato h3{
+        margin-bottom: 20px;
+        font-size: 26px;
+    }
+    
+    .contatoInfo{
+        font-weight: 100;
+        gap: 10px;
+    
+    }
+    
+    /* .contatoInfo a{
+        
+    
+    }
+     */
+    .contatoInfo a:hover{
+        text-decoration-thickness: 2.5px; 
+        text-underline-offset: 5px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+
+    .navbar{
+        padding: 7px;     
+    }
+
+    .logoP{
+        margin-left: 12px;
+        margin-right: 9px;
+    }
+
+    .nome{
+        margin: 16px;
+        font-style: 600;
+        font-size: 22px;
+    }
+       
+    /* Inicio */
+    .inicio{
+        height: 60vh;
+        width: 100%;
+    }
+    
+    .textoInicioP{
+        height: 100%;
+        width: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .textoInicioF{
+        font-weight: 300;  
+        font-size: 1rem; 
+        width: 60%;
+        justify-content: center;
+        height: 100px;
+        padding: 40px;
+        border-radius: 61px 61px 61px 61px;
+        
+    }
+
+    /* Semaforo */
+    
+    .semaforop{
+        top: 50vh;
+        right: 5px;
+    }
+    
+    .semaforo {
+        gap: 10px;
+        width: 100px;  /* Diminuído */
+        height: 280px; /* Diminuído proporcionalmente */
+        border-radius: 148px;
+        
+    }
+    
+    .luz {
+        width: 60px;  /* Diminuído proporcionalmente */
+        height: 59px; /* Diminuído proporcionalmente */
+        border-radius: 50%;
+    }
+    
+    /* .vermelha { 
+        background: var(--vermelho);
+    }
+    .laranja { 
+        background: var(--laranja); 
+    }
+    .verde { 
+        background: var(--verde); 
+    } */
+     
+      
+    
+    /* projeto */
+    
+    .projeto{
+        height: 60vh;
+    }
+    .imgPreto{
+        padding-top: 26px;
+        width: 120px;
+    }
+    
+    .Ppreto{
+        width: 200px;
+        font-size: 18px;
+        margin: 26px;
+    }
+    .containerPreto{
+        width: 75%;
+        height: 60vh;
+    }
+    .containerRedP{
+        width: 100%;
+    }
+    .containerRed{
+        width: 60%;
+        height: 60vh;
+        border-top-left-radius: 106px;
+        border-bottom-left-radius: 106px;
+        font-style: 100;
+    }
+    
+/* * img{
+    display: none;
+}
+ */
+    .containerRed p{
+        width: 90%;
+        /* padding: 30px; */
+        font-size: 17px;
+        padding-left: 20px;
+    }
+    .imagensVermelho{
+        width: 230px;
+        padding: 30px;
+    }
+    .imagensVermelho img{
+        width: 150px;
+        
+    }
+    
+    
+    .sobre2{
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .containerOrange{
+        width: 90%;
+        border-radius: 106px;
+        height: 60%;
+        display: flex;
+        align-items: center;
+    }
+    /* carrossel */
+    .carousel-container {
+        width: 80%;
+        margin: 50px auto;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
+    .carousel {
+        flex-direction: row;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .carousel-item {
+        width: 100%; /* Exibindo 1 card por vez em telas móveis */
+        flex: 0 0 40%; 
+        padding: 20px;
+        margin-right: 5%;
+        height: 100%;
+        border-radius: 95px;
+    }
+    
+    .carousel-item img {
+        border-radius: 31px;
+        width: 150px;
+    }
+    
+    .carousel-item p {
+        margin-top: 15px;
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+    
+    button {
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 5px;
+    }
+    
+    button.prev {
+        left: 10px;
+    }
+    
+    button.next {
+        right: 10px;
+    }
+    
+    /* button:hover {
+
+    } */
+    
+    .dots {
+        margin-top: 122px;
+    }
+    
+    .dots span {
+        width: 10px;
+        height: 10px;
+        margin: 0 5px;
+        border-radius: 50%;
+    }
+    
+    /* .dots .active {
+
+    } */
+    
+    /* Verde */
+    .services{
+        width: 100%;
+        height: 60vh;
+    }
+    .containerGreen{
+        height: 100%;
+        width: 90%;
+        border-radius: 106px 0px 0px 106px;
+    }
+    
+    .containerGreenText{
+        width: 80%;
+        font-style: 100;
+        font-size: 14px;
+        padding-left: 30px;
+    }
+    
+    .greenH2{
+        color: var(--branco);
+    }
+    
+    .imagensVerde img{
+        width: 120px;
+        padding: 30px;
+    }
+    
+    /* Footer */
+    footer{
+        font-size: 18px;
+        height: 70vh;
+        margin-top: 120px;
+        border-radius: 40px 40px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .rotaL{
+        width: 40%;
+    }
+    
+    .rotaL h2{
+        margin-top: 18px;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    
+    .rotaL p{
+        width: 350px;
+        font-size: 18px;
+        font-style: 100;
+    
+    }
+    
+    .rotalogoP{
+        width: 80px;
+        height: 80px;
+        margin-top: 30px;
+    }
+    
+    .appDev{
+        padding-bottom: 30px;
+        width: 100%;
+        padding: 20px;
+        gap: 10px;
+        font-size: 12px;
+    }
+    
+    .baixe{
+        padding-bottom: 50px;
+        margin-top: 10px;
+    }
+    
+    .baixe h3{
+        margin-bottom: 20px;
+        font-size: 21px;
+    }
+    
+    .baixe a{
+        padding: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        border-radius: 40px;
+    }
+    
+    .contato{
+        margin-left: 10px;
+    }
+    
+    .contato img{
+        width: 20px;
+        height: 20px;
+    }
+    
+    .contato h3{
+        margin-bottom: 20px;
+        font-size: 21px;
+    }
+    
+    .contatoInfo{
+        font-weight: 100;
+        gap: 10px;
+    
+    }
+    
+    .contatoInfo a{
+        
+    font-size: 16px;
+    }
+    
+    .contatoInfo a:hover{
+        text-decoration-thickness: 2.3px; 
+        text-underline-offset: 5px;
+    }
+}
