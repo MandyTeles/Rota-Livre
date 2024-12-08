@@ -1003,7 +1003,7 @@ footer{
         width: 100%;
     }
     .containerRed{
-        width: 60%;
+        width: 95%;
         height: 60vh;
         border-top-left-radius: 106px;
         border-bottom-left-radius: 106px;
@@ -1015,7 +1015,7 @@ footer{
 }
  */
     .containerRed p{
-        width: 90%;
+        width: 75%;
         /* padding: 30px; */
         font-size: 17px;
         padding-left: 20px;
@@ -1025,7 +1025,7 @@ footer{
         padding: 30px;
     }
     .imagensVermelho img{
-        width: 150px;
+        width: 120px;
         
     }
     
@@ -1117,12 +1117,12 @@ footer{
     }
     .containerGreen{
         height: 100%;
-        width: 90%;
+        width: 94%;
         border-radius: 106px 0px 0px 106px;
     }
     
     .containerGreenText{
-        width: 80%;
+        width: 72%;
         font-style: 100;
         font-size: 14px;
         padding-left: 30px;
@@ -1133,7 +1133,7 @@ footer{
     }
     
     .imagensVerde img{
-        width: 120px;
+        width: 100px;
         padding: 30px;
     }
     
